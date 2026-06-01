@@ -1,40 +1,122 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #1e1e1e;
-    color: white;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-header {
-    background-color: #ff8c00;
-    text-align: center;
-    padding: 30px;
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#111;
+    color:white;
+    line-height:1.6;
 }
 
-section {
-    background-color: #2a2a2a;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
+.hero{
+    height:100vh;
+    background:
+        linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+        url("https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1600");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
 }
 
-h2 {
-    color: #ffb347;
+.overlay h1{
+    font-size:5rem;
+    color:#ff9900;
+    text-transform:uppercase;
 }
 
-a {
-    color: #4da6ff;
+.overlay p{
+    font-size:1.3rem;
+    margin:15px 0;
 }
 
-button {
-    background-color: #ff8c00;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
+button{
+    padding:12px 25px;
+    border:none;
+    background:#ff9900;
+    color:white;
+    font-size:1rem;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
 }
 
-button:hover {
-    opacity: 0.9;
+button:hover{
+    transform:scale(1.05);
+}
+
+main{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.card{
+    background:#1c1c1c;
+    margin:30px 0;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(255,153,0,.15);
+}
+
+.card h2{
+    color:#ff9900;
+    margin-bottom:20px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.box{
+    background:#252525;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    transition:.3s;
+}
+
+.box:hover{
+    transform:translateY(-5px);
+    background:#ff9900;
+}
+
+.operators{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.operator{
+    flex:1;
+    min-width:250px;
+    background:#252525;
+    padding:20px;
+    border-radius:10px;
+}
+
+.operator h3{
+    color:#ff9900;
+    margin-bottom:10px;
+}
+
+.btn-link{
+    display:inline-block;
+    text-decoration:none;
+    color:white;
+    background:#ff9900;
+    padding:12px 20px;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.btn-link:hover{
+    transform:scale(1.05);
 }
