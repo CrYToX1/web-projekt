@@ -8,54 +8,68 @@
 </head>
 <body>
 
-<header>
-    <h1>Moje oblíbená hra: Rainbow Six Siege</h1>
-    <p>Taktická FPS hra zaměřená na týmovou spolupráci, strategii a komunikaci.</p>
+<header class="hero">
+    <div class="overlay">
+        <h1>Rainbow Six Siege</h1>
+        <p>Moje nejoblíbenější taktická FPS hra</p>
+        <button onclick="showFact()">Zjistit zajímavost</button>
+        <p id="fact"></p>
+    </div>
 </header>
 
-<section>
-    <h2>O hře</h2>
+<main>
+
+<section class="card">
+    <h2>🎮 O hře</h2>
     <p>
-        Rainbow Six Siege je online taktická střílečka, ve které proti sobě bojují
-        útočníci a obránci. Každý operátor má unikátní schopnosti a vybavení.
+        Rainbow Six Siege je taktická multiplayerová FPS hra zaměřená
+        na týmovou spolupráci, komunikaci a promyšlenou strategii.
     </p>
 </section>
 
-<section>
-    <h2>Proč mě baví</h2>
-    <ul>
-        <li>Týmová spolupráce</li>
-        <li>Taktické plánování</li>
-        <li>Velké množství operátorů</li>
-        <li>Pravidelné aktualizace</li>
-    </ul>
+<section class="card">
+    <h2>🔥 Proč mě baví</h2>
+
+    <div class="grid">
+        <div class="box">Týmová spolupráce</div>
+        <div class="box">Destrukce prostředí</div>
+        <div class="box">Unikátní operátoři</div>
+        <div class="box">Kompetitivní hraní</div>
+    </div>
 </section>
 
-<section>
-    <h2>Moji oblíbení operátoři</h2>
-    <p>Ash, Jäger a Bandit patří mezi moje nejoblíbenější operátory.</p>
+<section class="card">
+    <h2>⭐ Oblíbení operátoři</h2>
+
+    <div class="operators">
+        <div class="operator">
+            <h3>Ash</h3>
+            <p>Rychlá útočnice specializovaná na průnik obrany.</p>
+        </div>
+
+        <div class="operator">
+            <h3>Jäger</h3>
+            <p>Obránce chránící tým před granáty.</p>
+        </div>
+
+        <div class="operator">
+            <h3>Bandit</h3>
+            <p>Specialista na elektrifikaci zdí a drátů.</p>
+        </div>
+    </div>
 </section>
 
-<section>
-    <h2>Oficiální stránky</h2>
-    <p>
-        Více informací najdete na
-        <a href="https://www.ubisoft.com/en-gb/game/rainbow-six/siege" target="_blank">
-            oficiálních stránkách hry
-        </a>.
-    </p>
+<section class="card">
+    <h2>🌐 Oficiální stránky</h2>
+
+    <a class="btn-link"
+       href="https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+       target="_blank">
+       Navštívit Ubisoft
+    </a>
 </section>
 
-<section>
-    <h2>Zajímavost</h2>
-    <p id="fact">
-        Klikni na tlačítko a zobraz zajímavost o Rainbow Six Siege.
-    </p>
-
-    <button onclick="showFact()">
-        Zobraz zajímavost
-    </button>
-</section>
+</main>
 
 <script src="script.js"></script>
 
